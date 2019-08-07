@@ -447,6 +447,7 @@ hr {
 .product-title h1{
 	font-size:50px;
 	margin-top:20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .product-title p{
 	font-size:20px;
@@ -463,10 +464,12 @@ hr {
 	margin:20px 20px;
 	font-size: 20px;
 	border:2px solid black;
-	height:350px;
+	height:35%;
 	width:46%;
-	background-color:lightgray;
+	background-color:rgb(238, 238, 238);
 }
+
+
 
 .grid-wrapper h2{
 	margin:20px 20px;
@@ -477,6 +480,7 @@ hr {
 .grid-wrapper p{
 	margin:20px 20px;
 	font-size: 20px;
+	line-height: 1.3;
 }
 .grid-wrapper button{
 	margin:20px 20px;
@@ -509,7 +513,7 @@ hr {
 	width:45%;
 	margin-left:40px;
 	margin-bottom:60px;
-	height:300px;
+	height:350px;
 }
 
 
@@ -518,3 +522,36 @@ footer {
 	margin-bottom: 100px;
 	margin-top: 50px;
 }
+
+
+/* Media Queries */
+
+@media screen and (max-width:1200px){
+	.grid-wrapper{
+		width:95%;
+	}
+	nav{
+		width:100%;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	
+	}
+	
+   }
+   @media screen and (max-width:1200px){
+	   .product-foot{
+		   flex-direction: column;
+		   width:100%;
+	   }
+	   .foot-wrapper{
+		   width:90%;
+	   }
+	   .foot-img{
+		   width:90%;
+		   margin-top:30px;
+		   margin-left:0;
+	   }
+	   .product-foot p{
+		   width:100%;
+	   }
+   }
